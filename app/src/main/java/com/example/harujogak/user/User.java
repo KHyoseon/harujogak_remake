@@ -1,7 +1,6 @@
 package com.example.harujogak.user;
 
 import com.example.harujogak.timetable.*;
-import com.example.harujogak.schedule.ScheduleList;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
@@ -13,7 +12,6 @@ public class User {
     private static String id, passWord, eMail;
     private static ArrayList<MyTimeTable> weekTable = new ArrayList<MyTimeTable>();   //주간 시간표 저장하는 리스트
     private static ArrayList<MyTimeTable> dateTable = new ArrayList<MyTimeTable>();   //일일 시간표 저장하는 리스트
-    private static ScheduleList scheduleList = new ScheduleList();  //캘린더에 일정 저장하는 리스트
 
 //    public User() {
 //        this.weekTable = new ArrayList<>(7);
@@ -49,6 +47,5 @@ public class User {
         weekTable.add(new MyTimeTable("일요일"));
 
         this.dateTable = new ArrayList<>();
-        this.scheduleList = new ScheduleList();
     }
 }
