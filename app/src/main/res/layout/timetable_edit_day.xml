@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/backColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/add_task"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/chart_add_icon"
+                android:onClick="onClickAddTaskButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:gravity="center"
+            android:background="@drawable/eyegold2">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="380dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="다른 요일에도 적용"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageButton
+                android:id="@+id/mon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/mon_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/tue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tue_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/wed_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/wed_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/thr_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/thu_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/fri_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fri_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/sat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sat_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+            <ImageButton
+                android:id="@+id/sun_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sun_button"
+                android:onClick="checkDay"
+                android:scaleX="0.95"
+                android:scaleY="0.95" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_timeTable_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:backgroundTint="#505159"
+            android:text="추가"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</ScrollView>
