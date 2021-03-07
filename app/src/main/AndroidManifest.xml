@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.harujogak">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Harujogak">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Harujogak.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="TimeTableList" android:name=".TimeTableListActivity"/>
+        <activity android:label="TableByDayEdit" android:name=".TableByDayEditActivity"/>
+        <activity android:label="TableByDateEdit" android:name=".TableByDateEditActivity"/>
+<!--        <activity android:label="GoalActivity" android:name=".GoalActivity"/>-->
+<!--        <activity android:label="CalendarActivity" android:name=".ScheduleActivity"/>-->
+<!--        <activity android:label="LoginActivity" android:name=".LoginActivity"></activity>-->
+<!--        <activity android:label="Rating" android:name=".RatingActivity" />-->
+<!--        <activity android:label="SignUpActivity" android:name=".SignUpActivity"/>-->
+<!--        <activity android:label="Login2" android:name=".Login2"/>-->
+<!--        <activity android:label="StatActivity" android:name=".StatActivity"/>-->
+<!--        <activity android:label="StatDayActivity" android:name=".StatDayActivity"/>-->
+<!--        <activity android:label="StatWeekActivity" android:name=".StatWeekActivity"/>-->
+<!--        <activity android:label="StatObstructActivity" android:name=".StatObstructActivity"/>-->
+
+    </application>
+
+</manifest>
